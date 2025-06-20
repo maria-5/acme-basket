@@ -1,0 +1,18 @@
+{
+  "name": "ACME Basket Dev",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "workspaceFolder": "/app/${localWorkspaceFolderBasename}",
+  "runArgs": ["--init"],
+  "postCreateCommand": "composer install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "felixfbecker.php-intellisense",
+        "bmewburn.vscode-intelephense-client"
+      ]
+    }
+  }
+}
